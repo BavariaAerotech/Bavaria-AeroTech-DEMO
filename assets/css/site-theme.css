@@ -1,0 +1,31 @@
+/* Runtime entry point for the single light visual system. */
+:root {
+  color-scheme: light;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--bg-primary);
+}
+
+.site-header,
+.site-footer,
+.card,
+.callout,
+.media-frame,
+.video-card,
+.tabs,
+.details {
+  isolation: isolate;
+}
+
+.site-footer .footer-preferences {
+  display: none !important;
+}
+
+@media (max-width: 760px) {
+  .page-hero { padding-block: 22px 42px; }
+}

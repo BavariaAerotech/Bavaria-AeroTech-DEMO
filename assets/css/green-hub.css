@@ -1,0 +1,414 @@
+.hub-page {
+  background: var(--surface-primary);
+  color: var(--text-primary);
+}
+
+.hub-page .section {
+  padding-block: clamp(4rem, 7vw, 6.5rem);
+}
+
+.hub-page .section--muted {
+  background: var(--bg-primary);
+}
+
+.hub-page .section--navy {
+  background: var(--navy);
+  color: var(--surface-primary);
+}
+
+.hub-page .section--navy .eyebrow {
+  color: #a8d9b5;
+}
+
+.hub-page .eyebrow {
+  margin-bottom: 1rem;
+  color: var(--brand-green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hub-page .eyebrow::before {
+  display: none;
+}
+
+.hub-hero h1,
+.hub-vision h2,
+.hub-render-section h2,
+.hub-areas h2,
+.hub-status-section h2,
+.hub-placeholder h2,
+.hub-partnership h2,
+.hub-cta h2 {
+  max-width: none;
+  color: inherit;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+}
+
+.hub-hero h1 {
+  margin-bottom: 1.5rem;
+  max-inline-size: 11ch;
+  font-size: clamp(2.65rem, 4.8vw, 4.8rem);
+  line-height: .98;
+}
+
+.hub-vision h2,
+.hub-render-section h2,
+.hub-areas h2,
+.hub-status-section h2,
+.hub-placeholder h2,
+.hub-partnership h2,
+.hub-cta h2 {
+  margin-bottom: 1.25rem;
+  max-inline-size: 22ch;
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  line-height: 1.05;
+}
+
+.hub-hero {
+  padding-block: clamp(3.5rem, 7vw, 7.5rem) clamp(4.5rem, 8vw, 8.5rem);
+  background: var(--bg-primary);
+}
+
+.hub-hero__grid,
+.hub-vision__grid,
+.hub-render-section__grid,
+.hub-status-section__layout,
+.hub-placeholder__layout,
+.hub-partnership__layout {
+  display: grid;
+  gap: clamp(2rem, 5vw, 5.5rem);
+}
+
+.hub-hero__grid > *,
+.hub-vision__grid > *,
+.hub-render-section__grid > *,
+.hub-status-section__layout > *,
+.hub-placeholder__layout > *,
+.hub-partnership__layout > * { min-width: 0; }
+
+.hub-hero__grid {
+  align-items: center;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+}
+
+.hub-hero__content {
+  max-width: 42rem;
+}
+
+.hub-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  margin-bottom: 1.35rem;
+  padding: 0.36rem 0.72rem;
+  border: 1px solid var(--brand-green);
+  border-radius: 999px;
+  color: var(--brand-green);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hub-hero__lead {
+  max-width: 38rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: clamp(1.1rem, 1.7vw, 1.32rem);
+  line-height: 1.6;
+}
+
+.hub-hero__render,
+.hub-render-section__figure {
+  margin: 0;
+}
+
+.hub-hero__render img,
+.hub-render-section__figure img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hub-hero__render img {
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-position: 56% center;
+}
+
+.hub-render-section__figure img {
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-position: center;
+}
+
+.hub-hero__render figcaption,
+.hub-render-section__figure figcaption {
+  max-width: 31rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  background: var(--surface-primary);
+  color: var(--text-secondary);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.hub-vision__grid,
+.hub-status-section__layout,
+.hub-placeholder__layout,
+.hub-partnership__layout {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+
+.hub-vision__copy,
+.hub-placeholder__copy {
+  max-width: 48rem;
+  color: var(--text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.hub-vision__copy ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 1.8rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.hub-vision__copy li {
+  position: relative;
+  padding: 0.85rem 0 0.85rem 1.5rem;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.hub-vision__copy li::before {
+  position: absolute;
+  left: 0;
+  color: var(--brand-green);
+  content: "—";
+  font-weight: 700;
+}
+
+.hub-vision__copy li:nth-child(2n) {
+  padding-left: 2.7rem;
+}
+
+.hub-vision__copy li:nth-child(2n)::before {
+  left: 1.2rem;
+}
+
+.hub-render-section__grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(17rem, 0.85fr);
+  align-items: center;
+}
+
+.hub-render-section__copy {
+  max-width: 32rem;
+}
+
+.hub-render-section__copy p:not(.eyebrow) {
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hub-areas__heading {
+  max-width: 45rem;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.hub-areas__heading p:not(.eyebrow) {
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hub-areas__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.hub-areas__list li {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  gap: 0.75rem;
+  min-height: 0;
+  padding: 1.45rem 1.2rem 1.5rem 0;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.hub-areas__list li:nth-child(2n) {
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--border-default);
+}
+
+.hub-areas__list > li > span {
+  color: var(--brand-green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.hub-areas__list h3 {
+  margin-bottom: 0.45rem;
+  color: var(--navy);
+  font-size: clamp(1.12rem, 1.7vw, 1.32rem);
+  line-height: 1.25;
+}
+
+.hub-areas__list p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.hub-status-section__layout > div > p:not(.eyebrow) {
+  max-width: 33rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hub-status-section__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.hub-status-section__list li {
+  position: relative;
+  padding: 1rem 0 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-default);
+  color: var(--text-secondary);
+}
+
+.hub-status-section__list li::before {
+  position: absolute;
+  left: 0;
+  color: var(--brand-green);
+  content: "—";
+  font-weight: 700;
+}
+
+.hub-status-section__list li:nth-child(2n) {
+  padding-left: 2.7rem;
+}
+
+.hub-status-section__list li:nth-child(2n)::before {
+  left: 1.2rem;
+}
+
+.hub-partnership__layout > div:last-child {
+  max-width: 37rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.hub-partnership__layout p + p {
+  margin-top: 1rem;
+}
+
+.hub-text-link {
+  display: inline-flex;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.28rem;
+  border-bottom: 1px solid currentColor;
+  color: var(--surface-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hub-cta {
+  text-align: center;
+}
+
+.hub-cta__inner {
+  max-width: 52rem;
+}
+
+.hub-cta h2,
+.hub-cta p {
+  margin-inline: auto;
+}
+
+.hub-cta p:not(.eyebrow) {
+  max-width: 42rem;
+  margin-bottom: 1.8rem;
+  color: var(--text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1080px) {
+  .hub-hero__grid,
+  .hub-vision__grid,
+  .hub-render-section__grid,
+  .hub-status-section__layout,
+  .hub-placeholder__layout,
+  .hub-partnership__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-hero__render {
+    max-width: 48rem;
+  }
+
+  .hub-areas__list li:nth-child(n) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .hub-areas__list {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .hub-page .section {
+    padding-block: 4rem;
+  }
+
+  .hub-hero {
+    padding-block: 3rem 4.5rem;
+  }
+
+  .hub-hero__render figcaption,
+  .hub-render-section__figure figcaption {
+    margin: 0;
+  }
+
+  .hub-vision__copy ul,
+  .hub-status-section__list,
+  .hub-areas__list {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-vision__copy li:nth-child(n),
+  .hub-status-section__list li:nth-child(n),
+  .hub-areas__list li:nth-child(n),
+  .hub-areas__list li:nth-child(2n) {
+    padding: 1rem 0 1rem 1.5rem;
+    border-left: 0;
+  }
+
+  .hub-vision__copy li:nth-child(n)::before,
+  .hub-status-section__list li:nth-child(n)::before {
+    left: 0;
+  }
+}

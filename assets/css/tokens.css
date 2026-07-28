@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light;
+  --bg-primary: #f7f8f5;
+  --bg-secondary: #edf1ed;
+  --surface-primary: #ffffff;
+  --surface-secondary: #e7eee8;
+  --border-default: #c9d5cc;
+  --border-muted: #dce4dd;
+  --text-primary: #202a25;
+  --text-secondary: #4c5d52;
+  --text-muted: #718076;
+  --brand-green: #236b45;
+  --brand-green-soft: #4e9270;
+  --brand-blue: #236b45;
+  --brand-blue-soft: #4e9270;
+  --navy: #102b43;
+  --future: #64727a;
+  --warning: #9a6a20;
+  --shadow: 0 18px 50px rgba(16, 43, 67, .10);
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 24px;
+  --container: 1180px;
+  --header-h: 72px;
+  --font: "Ubuntu Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}

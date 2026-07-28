@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /legacy/
+Disallow: /private-source/
+Sitemap: https://www.bavaria-aerotech.de/sitemap.xml

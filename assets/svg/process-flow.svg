@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" aria-hidden="true">
+  <defs>
+    <marker id="product-arrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0 1 13 7 0 13Z" fill="#328df0"/>
+    </marker>
+    <marker id="tray-arrow" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0 1 13 7 0 13Z" fill="#328df0"/>
+    </marker>
+  </defs>
+  <path d="M285 398V410H500V422" fill="none" stroke="#328df0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#product-arrow)"/>
+  <path d="M150 398V422" fill="none" stroke="#328df0" stroke-width="4" stroke-linecap="round" marker-end="url(#tray-arrow)"/>
+  <path d="M175 578V600H988V303H976" fill="none" stroke="#328df0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tray-arrow)"/>
+</svg>

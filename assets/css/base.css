@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Ubuntu Sans";
+  src: url("../fonts/ubuntu-sans-variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-primary);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+h1 { font-size: clamp(2.55rem, 7vw, 5rem); }
+h2 { font-size: clamp(2rem, 4.2vw, 3.35rem); }
+h3 { font-size: clamp(1.25rem, 2.3vw, 1.65rem); }
+
+p {
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--brand-green);
+  text-underline-offset: .2em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--brand-green) 45%, transparent);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  top: 8px;
+  left: 8px;
+  padding: .7rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--navy);
+  color: #fff;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(4rem, 7vw, 6.5rem);
+}
+
+.section--muted {
+  background: var(--bg-secondary);
+}
+
+.section--tight {
+  padding-block: clamp(3rem, 5vw, 5rem);
+}
+
+.section--feature { padding-block: clamp(5rem, 9vw, 8rem); }
+.heading--wide { max-inline-size: 24ch; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  color: var(--brand-green);
+  font-family: var(--mono);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.lede {
+  max-width: 760px;
+  margin-top: 1.25rem;
+  font-size: clamp(1.08rem, 2vw, 1.28rem);
+}
+
+.section-head {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: clamp(2rem, 5vw, 3.6rem);
+}
+
+.section-head p { max-width: 760px; }
+.small { font-size: .88rem; }
+.muted { color: var(--text-muted); }
+.mono { font-family: var(--mono); }
+
+.noscript {
+  padding: 12px;
+  background: var(--warning);
+  color: #fff;
+  text-align: center;
+}
