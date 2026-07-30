@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
   <meta name="description" content="Hydroponisches Grünfutter als kontrolliertes Pilotprojekt von Bavaria AeroTech Solutions UG.">
   <title>Hydroponik | Bavaria AeroTech</title>
   <link rel="canonical" href="https://www.bavaria-aerotech.de/loesungen/gruenfutter.html">
@@ -36,7 +37,7 @@
             <a class="btn btn--secondary" href="#pilot-validation">Pilotansatz ansehen</a>
           </div>
         </div>
-        <figure class="hydro-hero__media">
+        <figure class="hydro-hero__media media-frame">
           <img src="../assets/images/hydroponics/process-04-led-growth.png" alt="Beleuchtete Anzuchtschalen in einer hydroponischen Wachstumsumgebung" width="1600" height="1000">
           <figcaption>Konzeptdarstellung einer möglichen Pilotumgebung – nicht als laufende Produktion.</figcaption>
         </figure>
@@ -64,63 +65,33 @@
           <p>Die Bildfolge zeigt die vorgesehene Prozesslogik. Ihre technische Ausgestaltung wird erst im Pilotbetrieb validiert.</p>
         </div>
 
-        <div class="hydro-process-accordion" data-hydro-process-accordion>
-          <details class="hydro-process-item" open>
+        <div class="hydro-process__content" data-hydro-process-accordion>
+          <figure class="hydro-process-preview">
+            <div class="hydro-process-preview__media"><img src="../assets/images/hydroponics/process-01-cleaning.png" alt="Saatgut auswählen und prüfen" width="1200" height="800"></div>
+            <figcaption><p data-hydro-process-copy>Für den Pilotbetrieb soll geeignetes Saatgut ausgewählt und vor der weiteren Verarbeitung geprüft werden.</p></figcaption>
+          </figure>
+          <div class="hydro-process-accordion">
+          <details class="hydro-process-item" data-image="../assets/images/hydroponics/process-01-cleaning.png" open>
             <summary><span class="hydro-process-item__number">01</span><span>Saatgut auswählen und prüfen</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-01-cleaning.png" alt="Saatgut bei der Sichtprüfung und Vorbereitung" width="1200" height="800" loading="lazy">
-              <p>Für den Pilotbetrieb soll geeignetes Saatgut ausgewählt und vor der weiteren Verarbeitung geprüft werden.</p>
-            </div>
+            <p class="hydro-process-item__copy" hidden>Für den Pilotbetrieb soll geeignetes Saatgut ausgewählt und vor der weiteren Verarbeitung geprüft werden.</p>
           </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">02</span><span>Saatgut reinigen</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-01-cleaning.png" alt="Saatgut während eines geplanten Reinigungsschritts" width="1200" height="800" loading="lazy">
-              <p>Ein definierter Reinigungsschritt ist vorgesehen, damit die hygienische Prozessführung im Pilot zuverlässig bewertet werden kann.</p>
-            </div>
+          <details class="hydro-process-item" data-image="../assets/images/hydroponics/process-02-soaking.png">
+            <summary><span class="hydro-process-item__number">02</span><span>Saatgut reinigen und vorbereiten</span></summary>
+            <p class="hydro-process-item__copy" hidden>Saatgut wird gereinigt, hygienisch vorbereitet und bei Bedarf von ungeeignetem Material getrennt.</p>
           </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">03</span><span>Einweichen und hygienisch vorbereiten</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-02-soaking.png" alt="Saatgut in einem Behälter für die geplante Einweichphase" width="1200" height="800" loading="lazy">
-              <p>Die Einweich- und Vorbereitungsphase soll unter hygienisch nachvollziehbaren Bedingungen in den Ablauf integriert werden.</p>
-            </div>
+          <details class="hydro-process-item" data-image="../assets/images/hydroponics/process-03-germination.png">
+            <summary><span class="hydro-process-item__number">03</span><span>Einweichen, Keimung und Verteilung</span></summary>
+            <p class="hydro-process-item__copy" hidden>Einweichen, Keimungsvorbereitung und die gleichmäßige Verteilung auf Anzuchtschalen werden als zusammenhängender geplanter Schritt betrachtet.</p>
           </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">04</span><span>Auf Anzuchtschalen verteilen</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-03-germination.png" alt="Saatgut wird auf Anzuchtschalen verteilt" width="1200" height="800" loading="lazy">
-              <p>Das vorbereitete Saatgut wird für die Keimung gleichmäßig auf Anzuchtschalen verteilt.</p>
-            </div>
+          <details class="hydro-process-item" data-image="../assets/images/hydroponics/process-04-led-growth.png">
+            <summary><span class="hydro-process-item__number">04</span><span>Kontrolliertes Wachstum</span></summary>
+            <p class="hydro-process-item__copy" hidden>Wachstum, Bewässerung, Beleuchtung, Klimaführung und Beobachtung werden im Pilot unter kontrollierten Bedingungen bewertet.</p>
           </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">05</span><span>Keimen und kontrolliert wachsen lassen</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-04-led-growth.png" alt="Anzuchtschalen in einer kontrollierten Wachstumsumgebung" width="1600" height="1000" loading="lazy">
-              <p>Keimung und Wachstum sollen im Pilot unter kontrollierten Bedingungen beobachtet und auf gleichbleibende Abläufe geprüft werden.</p>
-            </div>
+          <details class="hydro-process-item" data-image="../assets/images/hydroponics/process-05-harvest-cleaning.png">
+            <summary><span class="hydro-process-item__number">05</span><span>Ernte, Ausgabe und Reinigung</span></summary>
+            <p class="hydro-process-item__copy" hidden>Ernte, Ausgabe und Reinigung der Schalen werden als geplanter Kreislauf vorbereitet; eine regelmäßige Lieferung wird derzeit nicht angeboten.</p>
           </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">06</span><span>Bewässerung, Beleuchtung und Klimaführung</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-04-led-growth.png" alt="Beleuchtete Ebenen einer geplanten hydroponischen Wachstumsumgebung" width="1600" height="1000" loading="lazy">
-              <p>Bewässerung, Beleuchtung und Klimaführung werden als zusammenhängende Prozessbereiche geplant und im Pilot schrittweise bewertet.</p>
-            </div>
-          </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">07</span><span>Frischfutter ernten und ausgeben</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-05-harvest-cleaning.png" alt="Hydroponisches Grünfutter nach der geplanten Ernte" width="1200" height="800" loading="lazy">
-              <p>Die Ernte und Ausgabe sind als zu prüfende Prozessschritte vorgesehen; eine regelmäßige Lieferung wird derzeit nicht angeboten.</p>
-            </div>
-          </details>
-          <details class="hydro-process-item">
-            <summary><span class="hydro-process-item__number">08</span><span>Schalen reinigen und erneut einsetzen</span></summary>
-            <div class="hydro-process-item__content">
-              <img src="../assets/images/hydroponics/process-05-harvest-cleaning.png" alt="Anzuchtschalen im vorgesehenen Reinigungs- und Wiederverwendungskreislauf" width="1200" height="800" loading="lazy">
-              <p>Der wiederverwendbare Schalenkreislauf soll hinsichtlich Hygiene, Arbeitsablauf und praktischer Eignung im Pilotbetrieb geprüft werden.</p>
-            </div>
-          </details>
+          </div>
         </div>
       </div>
     </section>

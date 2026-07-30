@@ -75,11 +75,9 @@
 }
 
 .home-hero__media {
-  overflow: hidden;
-  border: 1px solid #c9d5cc;
-  border-radius: 2px;
+  overflow: visible;
   background: #e7eee8;
-  box-shadow: 18px 18px 0 #dce4dd;
+  box-shadow: none;
 }
 
 .home-hero__media img {
@@ -118,6 +116,7 @@
 }
 
 .home-area {
+  position: relative;
   display: grid;
   align-content: start;
   gap: 16px;
@@ -271,20 +270,27 @@
 
 .home-team__card {
   display: grid;
-  gap: 16px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #c9d5cc;
-}
-
-.home-team__card img {
-  width: 100%;
-  max-height: 9rem;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  gap: 6px;
+  padding: 1.25rem;
+  border: 1px solid #c9d5cc;
   background: #fff;
 }
 
-.home-team__card p { color: #34483b; font-weight: 750; }
+.home-team__initials {
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 0 .6rem;
+  place-items: center;
+  border: 1px solid #c9d5cc;
+  color: #236b45;
+  font-family: var(--mono);
+  font-size: .75rem;
+  font-weight: 800;
+}
+
+.home-team__card h3 { margin: 0; color: #172d21; font-size: 1.22rem; }
+.home-team__card p:not(.home-team__initials) { margin: 0; color: #4c5d52; font-weight: 650; }
 
 .home-inquiry { background: #f7f8f5; }
 
@@ -304,8 +310,8 @@
   color: #fff;
 }
 
-.home-page .site-footer p,
-.home-page .site-footer a { color: #dbe7df; }
+.home-page .site-footer p { color: #dbe7df; }
+.home-page .site-footer a { color: #a9d4b8; }
 
 @media (max-width: 1080px) {
   .home-hero__grid,

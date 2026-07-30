@@ -200,10 +200,20 @@
 
 .media-frame {
   position: relative;
-  overflow: hidden;
+  isolation: isolate;
+  overflow: visible;
   border: 1px solid var(--border-default);
-  border-radius: var(--radius);
   background: var(--surface-secondary);
+}
+
+.media-frame::before {
+  position: absolute;
+  z-index: -1;
+  inset: 10px -10px -10px 10px;
+  border: 1px solid #c9d5cc;
+  background: #e7eee8;
+  content: "";
+  pointer-events: none;
 }
 
 .media-frame img {
@@ -211,6 +221,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+.media-frame figcaption { position: relative; background: var(--surface-primary); }
 
 .media-frame,
 .media-frame img,

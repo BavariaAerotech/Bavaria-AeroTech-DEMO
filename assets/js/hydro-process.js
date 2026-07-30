@@ -3,6 +3,9 @@
   if (!accordion) return;
 
   const items = [...accordion.querySelectorAll('.hydro-process-item')];
+  const preview = accordion.querySelector('.hydro-process-preview');
+  const previewImage = preview?.querySelector('img');
+  const previewCopy = preview?.querySelector('[data-hydro-process-copy]');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const interval = 5000;
   let timer = null;
@@ -14,6 +17,14 @@
     items.forEach((item, itemIndex) => {
       item.open = itemIndex === next;
     });
+    const activeItem = items[next];
+    const label = activeItem.querySelector('summary span:last-child')?.textContent?.trim();
+    const copy = activeItem.querySelector('.hydro-process-item__copy')?.textContent?.trim();
+    if (previewImage && activeItem.dataset.image) {
+      previewImage.src = activeItem.dataset.image;
+      previewImage.alt = label || '';
+    }
+    if (previewCopy && copy) previewCopy.textContent = copy;
   };
 
   const stop = () => {

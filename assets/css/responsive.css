@@ -153,7 +153,7 @@ body.nav-open .mobile-nav-drawer { touch-action: pan-y; }
   .header-inner > .header-actions { flex: 0 0 auto; }
   .header-inner > .menu-toggle { width: 44px; height: 44px; }
   .header-inner > .header-actions .lang-switch { gap: 0; padding: 0; border: 0; }
-  .header-inner > .header-actions .lang-switch button { width: 44px; min-width: 44px; height: 44px; padding: 0; border: 0; }
+  .header-inner > .header-actions .lang-switch button { width: 44px; min-width: 44px; height: 44px; padding: 0; border: 0; pointer-events: auto; cursor: pointer; }
   .hero-actions .btn { width: 100%; }
 }
 
