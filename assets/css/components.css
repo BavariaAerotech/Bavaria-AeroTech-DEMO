@@ -224,6 +224,15 @@
 
 .media-frame figcaption { position: relative; background: var(--surface-primary); }
 
+.lucide-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+}
+
 .media-frame,
 .media-frame img,
 .card,

@@ -191,7 +191,9 @@
 }
 
 .hydro-process-preview__media {
+  width: 100%;
   aspect-ratio: 3 / 2;
+  overflow: hidden;
 }
 
 .hydro-process-preview img {
@@ -224,7 +226,7 @@
 
 .hydro-process-item summary {
   display: grid;
-  grid-template-columns: 3.3rem 1fr auto;
+  grid-template-columns: 3.3rem minmax(0, 1fr) auto auto;
   gap: 1rem;
   align-items: center;
   padding: 1.3rem 0;
@@ -260,6 +262,149 @@
   letter-spacing: 0.09em;
 }
 
+.hydro-process-item__period {
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.hydro-biomass {
+  border-top: 1px solid var(--border-default);
+}
+
+.hydro-biomass__layout {
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.hydro-biomass__heading {
+  max-width: 43rem;
+}
+
+.hydro-biomass__heading h2 {
+  margin-bottom: 1rem;
+}
+
+.hydro-biomass__heading p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.hydro-biomass__flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(4rem, .52fr) minmax(0, .8fr) minmax(4rem, .52fr) minmax(0, 1fr);
+  align-items: center;
+  min-height: 14rem;
+}
+
+.hydro-biomass__stage {
+  display: grid;
+  justify-items: center;
+  gap: .7rem;
+  min-width: 0;
+  text-align: center;
+}
+
+.hydro-biomass__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: .25rem;
+  color: var(--brand-green);
+}
+
+.hydro-biomass__stage strong {
+  color: var(--navy);
+  font-size: clamp(1.8rem, 3.1vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.hydro-biomass__stage p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: .84rem;
+  line-height: 1.4;
+}
+
+.hydro-biomass__connector {
+  position: relative;
+  height: 1px;
+  margin-inline: clamp(.5rem, 2vw, 1.5rem);
+  background: var(--brand-green);
+}
+
+.hydro-biomass__connector::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: .48rem;
+  height: .48rem;
+  border-top: 1px solid var(--brand-green);
+  border-right: 1px solid var(--brand-green);
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hydro-biomass__kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-default);
+  border-bottom: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.hydro-biomass__kpis li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  column-gap: .8rem;
+  align-items: center;
+  min-height: 7rem;
+  min-width: 0;
+  padding: 1.25rem clamp(1rem, 2vw, 1.75rem);
+}
+
+.hydro-biomass__kpis li + li {
+  border-left: 1px solid var(--border-default);
+}
+
+.hydro-biomass__kpis .lucide-icon {
+  grid-row: span 2;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: var(--brand-green);
+}
+
+.hydro-biomass__kpis span {
+  min-width: 0;
+  color: var(--text-muted);
+  font-size: .71rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
+}
+
+.hydro-biomass__kpis strong {
+  min-width: 0;
+  margin-top: .25rem;
+  color: var(--navy);
+  font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
 
 .hydro-validation__grid {
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
@@ -431,12 +576,60 @@
   }
 
   .hydro-process-item summary {
-    grid-template-columns: 2.6rem 1fr auto;
+    grid-template-columns: 2.35rem minmax(0, 1fr) auto;
     gap: 0.6rem;
     padding-block: 1.1rem;
   }
 
   .hydro-process-preview figcaption { min-height: 0; }
+
+  .hydro-process-item__period { grid-column: 2 / 3; text-align: left; }
+
+  .hydro-process-item summary::after {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .hydro-biomass__flow {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
+    min-height: 0;
+  }
+
+  .hydro-biomass__stage {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .hydro-biomass__connector {
+    width: 1px;
+    height: 3.25rem;
+    margin: 0;
+  }
+
+  .hydro-biomass__connector::after {
+    top: auto;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%) rotate(135deg);
+  }
+
+  .hydro-biomass__kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hydro-biomass__kpis li {
+    min-height: 6.5rem;
+  }
+
+  .hydro-biomass__kpis li:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .hydro-biomass__kpis li:nth-child(n + 3) {
+    border-top: 1px solid var(--border-default);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
