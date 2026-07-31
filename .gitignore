@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+.DS_Store
+__MACOSX/
+private-source/
+docs/
+legacy/
+tmp/
+*.zip
+.env
+.env.*
+*.key
+*.pem
+*.log
+*.tmp
+*.bak

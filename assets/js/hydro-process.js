@@ -6,10 +6,6 @@
   const preview = accordion.querySelector('.hydro-process-preview');
   const previewImage = preview?.querySelector('img');
   const previewCopy = preview?.querySelector('[data-hydro-process-copy]');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const interval = 5000;
-  let timer = null;
-
   const activeIndex = () => Math.max(0, items.findIndex(item => item.open));
 
   const activate = index => {
@@ -18,24 +14,13 @@
       item.open = itemIndex === next;
     });
     const activeItem = items[next];
-    const label = activeItem.querySelector('summary span:last-child')?.textContent?.trim();
+    const alt = activeItem.querySelector('.hydro-process-item__alt')?.textContent?.trim();
     const copy = activeItem.querySelector('.hydro-process-item__copy')?.textContent?.trim();
     if (previewImage && activeItem.dataset.image) {
       previewImage.src = activeItem.dataset.image;
-      previewImage.alt = label || '';
+      previewImage.alt = alt || '';
     }
     if (previewCopy && copy) previewCopy.textContent = copy;
-  };
-
-  const stop = () => {
-    if (timer) window.clearInterval(timer);
-    timer = null;
-  };
-
-  const start = () => {
-    stop();
-    if (reducedMotion.matches || document.hidden) return;
-    timer = window.setInterval(() => activate(activeIndex() + 1), interval);
   };
 
   items.forEach((item, index) => {
@@ -43,23 +28,8 @@
     summary?.addEventListener('click', event => {
       event.preventDefault();
       activate(index);
-      start();
     });
   });
-
-  accordion.addEventListener('pointerenter', stop);
-  accordion.addEventListener('pointerleave', start);
-  accordion.addEventListener('focusin', stop);
-  accordion.addEventListener('focusout', event => {
-    if (!accordion.contains(event.relatedTarget)) start();
-  });
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) stop();
-    else start();
-  });
-
-  reducedMotion.addEventListener('change', start);
   activate(activeIndex());
-  start();
+  document.addEventListener('bat:languagechange', () => activate(activeIndex()));
 })();
