@@ -1,0 +1,15 @@
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.65fr);gap:40px}.contact-form{display:grid;gap:22px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field{display:grid;gap:7px}.field--full{grid-column:1/-1}.field label,.field legend{color:var(--text-primary);font-weight:700}.field input,.field select,.field textarea{width:100%;min-height:48px;padding:11px 13px;border:1px solid var(--border-default);border-radius:8px;background:var(--surface-primary);color:var(--text-primary);font-size:16px}.field textarea{min-height:150px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand-blue);outline:2px solid color-mix(in srgb,var(--brand-blue) 24%,transparent);outline-offset:1px}.field-error{color:#b42318;font-size:.82rem}.choice-group{display:flex;flex-wrap:wrap;gap:10px}.choice{display:flex;align-items:flex-start;gap:9px;color:var(--text-secondary)}.choice input{width:19px;height:19px;margin-top:3px}.honeypot{position:absolute!important;left:-10000px!important}.form-status{min-height:28px;padding:0;color:var(--text-secondary)}.form-status.is-success{padding:12px;border:1px solid var(--brand-green);border-radius:8px;color:var(--brand-green)}.form-status.is-error{padding:12px;border:1px solid #b42318;border-radius:8px;color:#b42318}
+
+/* Keep the native select and place its chevron consistently across engines. */
+.field select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-inline-end: 2.6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3.5 6 4.5 4.5L12.5 6' fill='none' stroke='%23243632' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: right 14px center;
+}
+@media (forced-colors: active) {
+  .field select { -webkit-appearance: auto; appearance: auto; background-image: none; padding-inline-end: 13px; }
+}

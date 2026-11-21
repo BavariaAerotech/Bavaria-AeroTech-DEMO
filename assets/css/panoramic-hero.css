@@ -1,0 +1,123 @@
+/* Shared editorial hero pattern for the four primary visual narratives. */
+.panoramic-hero {
+  padding-block: clamp(3.75rem, 8vw, 7.5rem) clamp(4rem, 8vw, 7rem);
+  background: var(--bg-primary);
+}
+
+.panoramic-hero > .container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+}
+
+.panoramic-hero__content,
+.panoramic-hero__media {
+  min-width: 0;
+}
+
+.panoramic-hero__content {
+  max-width: 76rem;
+}
+
+.panoramic-hero__content .eyebrow,
+.panoramic-hero__content :is(.hydro-status, .drone-status, .hub-status) {
+  vertical-align: middle;
+}
+
+.panoramic-hero__content h1 {
+  max-inline-size: 28ch;
+  margin-top: clamp(1rem, 2vw, 1.75rem);
+  font-size: clamp(2.7rem, 5.5vw, 5.25rem);
+  letter-spacing: -.06em;
+  line-height: .98;
+  text-wrap: balance;
+}
+
+.panoramic-hero__content .eyebrow + :is(.hydro-status, .drone-status, .hub-status) {
+  margin-left: .35rem;
+}
+
+.panoramic-hero__content :is(.hydro-status, .drone-status, .hub-status) {
+  margin-bottom: 0;
+}
+
+.panoramic-hero__content :is(.home-hero__lead, .hydro-hero__lead, .drone-hero__lead, .hub-hero__lead) {
+  max-width: 48rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+.panoramic-hero__content .button-row {
+  margin-top: 2rem;
+}
+
+.panoramic-hero__media {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.panoramic-hero__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.2 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.panoramic-hero__media figcaption {
+  max-width: none;
+  margin: 0;
+  padding: .85rem 1.1rem;
+  border-top: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.home-hero__media img { object-position: 50% 48%; }
+.hydro-hero__media img { aspect-ratio: 2.05 / 1; object-position: 54% center; }
+.drone-hero__media img { object-position: 50% 52%; }
+.hub-hero__render img { object-position: 50% 52%; }
+
+@media (max-width: 760px) {
+  .panoramic-hero {
+    padding-block: 3rem 4.25rem;
+  }
+
+  .panoramic-hero > .container {
+    gap: 2.35rem;
+  }
+
+  .panoramic-hero__content h1 {
+    max-inline-size: none;
+    font-size: clamp(2.35rem, 11vw, 4rem);
+    line-height: 1;
+  }
+
+  .panoramic-hero__media img,
+  .hydro-hero__media img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .drone-hero__media img,
+  .hub-hero__render img,
+  .home-hero__media img {
+    aspect-ratio: 3 / 2;
+  }
+
+  .panoramic-hero__content .eyebrow + :is(.hydro-status, .drone-status, .hub-status) {
+    margin-left: 0;
+  }
+
+  .panoramic-hero__content :is(.hydro-status, .drone-status, .hub-status) {
+    margin-top: .25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .panoramic-hero .button-row .btn {
+    width: 100%;
+  }
+}

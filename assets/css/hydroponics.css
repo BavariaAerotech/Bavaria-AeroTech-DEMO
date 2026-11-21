@@ -1,0 +1,688 @@
+.hydro-page {
+  background: var(--surface-primary);
+  color: var(--text-primary);
+}
+
+.hydro-page .section {
+  padding-block: clamp(4rem, 7vw, 6.5rem);
+}
+
+.hydro-page .section--muted {
+  background: var(--bg-primary);
+}
+
+.hydro-page .section--navy {
+  background: var(--navy);
+  color: var(--surface-primary);
+}
+
+.hydro-page .section--navy .eyebrow {
+  color: #a8d9b5;
+}
+
+.hydro-page .eyebrow {
+  margin-bottom: 1rem;
+  color: var(--brand-green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hydro-hero h1,
+.hydro-intro h2,
+.hydro-process h2,
+.hydro-validation h2,
+.hydro-partners h2,
+.hydro-faq h2,
+.hydro-cta h2 {
+  max-width: none;
+  color: inherit;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+}
+
+.hydro-hero h1 {
+  margin-bottom: 1.5rem;
+  max-inline-size: 11ch;
+  font-size: clamp(2.65rem, 4.8vw, 4.8rem);
+  line-height: .98;
+}
+
+.hydro-intro h2,
+.hydro-process h2,
+.hydro-validation h2,
+.hydro-partners h2,
+.hydro-faq h2,
+.hydro-cta h2 {
+  margin-bottom: 1.25rem;
+  max-inline-size: 22ch;
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  line-height: 1.05;
+}
+
+.hydro-hero {
+  padding-block: clamp(3.5rem, 7vw, 7.5rem) clamp(4.5rem, 8vw, 8.5rem);
+  background: var(--bg-primary);
+}
+
+.hydro-hero__grid,
+.hydro-intro__grid,
+.hydro-validation__grid,
+.hydro-partners__grid,
+.hydro-faq__layout {
+  display: grid;
+  gap: clamp(2rem, 5vw, 5.5rem);
+}
+
+.hydro-hero__grid > *,
+.hydro-intro__grid > *,
+.hydro-process__layout > *,
+.hydro-validation__grid > *,
+.hydro-partners__grid > *,
+.hydro-faq__layout > * { min-width: 0; }
+
+.hydro-hero__grid {
+  align-items: center;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+}
+
+.hydro-hero__content {
+  max-width: 42rem;
+}
+
+.hydro-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  margin-bottom: 1.35rem;
+  padding: 0.36rem 0.72rem;
+  border: 1px solid var(--brand-green);
+  border-radius: 999px;
+  color: var(--brand-green);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hydro-hero__lead {
+  max-width: 38rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: clamp(1.1rem, 1.7vw, 1.32rem);
+  line-height: 1.6;
+}
+
+.hydro-hero__actions {
+  align-items: center;
+}
+
+.hydro-hero__media {
+  position: relative;
+  margin: 0;
+}
+
+.hydro-hero__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 55% center;
+}
+
+.hydro-hero__media figcaption {
+  position: relative;
+  max-width: 26rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  background: var(--surface-primary);
+  color: var(--text-secondary);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.hydro-video {
+  border-top: 1px solid var(--border-default);
+}
+
+.hydro-video__intro {
+  max-width: 48rem;
+  margin: 0 auto clamp(2.25rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.hydro-video__intro h2 {
+  max-width: 18ch;
+  margin: 0 auto 1.1rem;
+  color: inherit;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: clamp(2rem, 3.6vw, 3.45rem);
+  font-weight: 600;
+  hyphens: none;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+  overflow-wrap: normal;
+}
+
+.hydro-video__lead {
+  max-width: 42rem;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.hydro-video__figure {
+  width: min(100%, clamp(31rem, 44vw, 40rem), 62vh);
+  margin: 0 auto;
+}
+
+.hydro-video__player {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--border-default);
+  background: var(--navy);
+  object-fit: contain;
+}
+
+.hydro-video__player:focus-visible {
+  outline: 3px solid var(--brand-green);
+  outline-offset: 4px;
+}
+
+.hydro-video__figure figcaption {
+  max-width: 52rem;
+  margin: 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border-default);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.hydro-intro__grid {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.hydro-intro__copy {
+  max-width: 48rem;
+  color: var(--text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.hydro-intro__copy p + p {
+  margin-top: 1.25rem;
+}
+
+.hydro-process__layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(2.5rem, 7vw, 8rem);
+  align-items: start;
+}
+
+.hydro-process__heading {
+  position: static;
+  max-width: 29rem;
+}
+
+.hydro-process__heading p:not(.eyebrow) {
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hydro-process-item__visual {
+  max-inline-size: 40rem;
+  margin: 0 0 1.3rem;
+}
+.hydro-process-item__visual img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  max-block-size: min(46vh, 29rem);
+  object-fit: contain;
+  object-position: left center;
+}
+.hydro-process-item__visual figcaption {
+  margin-top: .75rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+.hydro-process-item summary:focus-visible {
+  outline-offset: -2px;
+}
+
+.hydro-process-accordion {
+  border-top: 1px solid var(--border-default);
+}
+
+.hydro-process-item {
+  border-bottom: 1px solid var(--border-default);
+}
+
+.hydro-process-item summary {
+  display: grid;
+  grid-template-columns: 2.35rem minmax(0, 1fr) auto 1rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.15rem .3rem;
+  color: var(--navy);
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  font-size: clamp(1.05rem, 1.5vw, 1.22rem);
+  font-weight: 600;
+  list-style: none;
+}
+
+.hydro-process-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.hydro-process-item summary::after {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  content: "";
+  transform: rotate(45deg) translateY(-0.18rem);
+  transition: transform 180ms ease;
+}
+
+.hydro-process-item[open] summary::after {
+  transform: rotate(225deg) translate(-0.18rem, -0.18rem);
+}
+
+.hydro-process-item__number {
+  color: var(--brand-green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.hydro-process-item__period {
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.hydro-biomass {
+  border-top: 1px solid var(--border-default);
+}
+
+.hydro-biomass__layout {
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.hydro-biomass__heading {
+  max-width: 43rem;
+}
+
+.hydro-biomass__heading h2 {
+  margin-bottom: 1rem;
+}
+
+.hydro-biomass__heading p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.hydro-biomass__flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(4rem, .52fr) minmax(0, .8fr) minmax(4rem, .52fr) minmax(0, 1fr);
+  align-items: center;
+  min-height: 14rem;
+}
+
+.hydro-biomass__stage {
+  display: grid;
+  justify-items: center;
+  gap: .7rem;
+  min-width: 0;
+  text-align: center;
+}
+
+.hydro-biomass__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: .25rem;
+  color: var(--brand-green);
+}
+
+.hydro-biomass__stage strong {
+  color: var(--navy);
+  font-size: clamp(1.8rem, 3.1vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.hydro-biomass__stage p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: .84rem;
+  line-height: 1.4;
+}
+
+.hydro-biomass__connector {
+  position: relative;
+  height: 1px;
+  margin-inline: clamp(.5rem, 2vw, 1.5rem);
+  background: var(--brand-green);
+}
+
+.hydro-biomass__connector::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: .48rem;
+  height: .48rem;
+  border-top: 1px solid var(--brand-green);
+  border-right: 1px solid var(--brand-green);
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hydro-biomass__kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-default);
+  border-bottom: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.hydro-biomass__kpis li {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  column-gap: .8rem;
+  align-items: center;
+  min-height: 7rem;
+  min-width: 0;
+  padding: 1.25rem clamp(1rem, 2vw, 1.75rem);
+}
+
+.hydro-biomass__kpis li + li {
+  border-left: 1px solid var(--border-default);
+}
+
+.hydro-biomass__kpis .lucide-icon {
+  grid-row: span 2;
+  width: 1.7rem;
+  height: 1.7rem;
+  color: var(--brand-green);
+}
+
+.hydro-biomass__kpis span {
+  min-width: 0;
+  color: var(--text-muted);
+  font-size: .71rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
+}
+
+.hydro-biomass__kpis strong {
+  min-width: 0;
+  margin-top: .25rem;
+  color: var(--navy);
+  font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.hydro-validation__grid {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: start;
+}
+
+.hydro-validation__grid > div > p:not(.eyebrow) {
+  max-width: 33rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hydro-validation__list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border-default);
+  list-style: none;
+}
+
+.hydro-validation__list li {
+  position: relative;
+  padding: 1.1rem 0 1.1rem 2rem;
+  border-bottom: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.hydro-validation__list li::before {
+  position: absolute;
+  margin-left: -2rem;
+  color: var(--brand-green);
+  content: "—";
+  font-weight: 700;
+}
+
+.hydro-validation__list strong {
+  color: var(--navy);
+}
+
+.hydro-partners__grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  align-items: start;
+}
+
+.hydro-partners__grid > div:last-child {
+  max-width: 37rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+.hydro-partners__grid p + p {
+  margin-top: 1rem;
+}
+
+.hydro-partners .text-link {
+  display: inline-flex;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.28rem;
+  border-bottom: 1px solid currentColor;
+  color: var(--surface-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hydro-faq__layout {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+}
+
+.hydro-faq__items {
+  border-top: 1px solid var(--border-default);
+}
+
+.hydro-faq__items details {
+  border-bottom: 1px solid var(--border-default);
+}
+
+.hydro-faq__items summary {
+  position: relative;
+  padding: 1.3rem 2rem 1.3rem 0;
+  color: var(--navy);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.45;
+  list-style: none;
+}
+
+.hydro-faq__items summary::-webkit-details-marker {
+  display: none;
+}
+
+.hydro-faq__items summary::after {
+  position: absolute;
+  right: 0.25rem;
+  color: var(--brand-green);
+  content: "+";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.hydro-faq__items details[open] summary::after {
+  content: "−";
+}
+
+.hydro-faq__items p {
+  max-width: 48rem;
+  margin: 0;
+  padding: 0 2rem 1.35rem 0;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hydro-cta {
+  text-align: center;
+}
+
+.hydro-cta__inner {
+  max-width: 52rem;
+}
+
+.hydro-cta h2,
+.hydro-cta p {
+  margin-inline: auto;
+}
+
+.hydro-cta p:not(.eyebrow) {
+  max-width: 42rem;
+  margin-bottom: 1.8rem;
+  color: var(--text-secondary);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1080px) {
+  .hydro-hero__grid,
+  .hydro-intro__grid,
+  .hydro-validation__grid,
+  .hydro-partners__grid,
+  .hydro-faq__layout,
+  .hydro-process__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hydro-process__heading {
+    position: static;
+  }
+
+  .hydro-hero__media {
+    max-width: 48rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .hydro-page .section {
+    padding-block: 4rem;
+  }
+
+  .hydro-hero {
+    padding-block: 3rem 4.5rem;
+  }
+
+  .hydro-hero__media figcaption {
+    margin: 0;
+  }
+
+  .hydro-video__intro {
+    text-align: left;
+  }
+
+  .hydro-video__intro h2,
+  .hydro-video__lead {
+    margin-inline: 0;
+  }
+
+  .hydro-process-item summary {
+    grid-template-columns: 2.35rem minmax(0, 1fr) auto;
+    gap: 0.6rem;
+    padding-block: 1.1rem;
+  }
+
+  .hydro-process-item__period { grid-column: 2 / 3; text-align: left; }
+
+  .hydro-process-item summary::after {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .hydro-biomass__flow {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
+    min-height: 0;
+  }
+
+  .hydro-biomass__stage {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .hydro-biomass__connector {
+    width: 1px;
+    height: 3.25rem;
+    margin: 0;
+  }
+
+  .hydro-biomass__connector::after {
+    top: auto;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%) rotate(135deg);
+  }
+
+  .hydro-biomass__kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hydro-biomass__kpis li {
+    min-height: 6.5rem;
+  }
+
+  .hydro-biomass__kpis li:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .hydro-biomass__kpis li:nth-child(n + 3) {
+    border-top: 1px solid var(--border-default);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hydro-process-item summary::after {
+    transition: none;
+  }
+}

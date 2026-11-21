@@ -1,0 +1,35 @@
+.media-intro {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+  border-bottom: 1px solid var(--border-default);
+}
+.media-intro .lede { max-inline-size: 52ch; }
+.project-films {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+.project-film {
+  display: grid;
+  gap: 1.4rem clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+.project-film + .project-film {
+  padding-top: clamp(2rem, 5vw, 4rem);
+  border-top: 1px solid var(--border-default);
+}
+.project-film > * { min-inline-size: 0; }
+.project-film h2 { overflow-wrap: anywhere; hyphens: auto; }
+.project-film p { margin-block: .7rem; max-inline-size: 40ch; }
+.project-film__player {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  max-block-size: min(72svh, 35rem);
+  border-radius: 9px;
+  background: var(--navy);
+  object-fit: contain;
+}
+.project-film__player--square { max-inline-size: 35rem; }
+@media (min-width: 960px) {
+  .project-film { grid-template-columns: minmax(0, .72fr) minmax(0, 1.3fr); }
+}

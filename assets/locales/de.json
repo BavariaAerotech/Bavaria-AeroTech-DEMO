@@ -1,0 +1,313 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "overview": "Übersicht",
+    "solutions": "Geschäftsbereiche",
+    "fodder": "Hydroponik",
+    "drones": "Agrardrohnen",
+    "inspections": "Drohneninspektion",
+    "pilot": "Pilotprojekt",
+    "hub": "Green Hub",
+    "technology": "Technologie",
+    "cooperation": "Kooperation",
+    "company": "Unternehmen",
+    "media": "Medien",
+    "contact": "Kontakt",
+    "inquiry": "Projektanfrage senden",
+    "souveraenAi": "SOUVERÄN-AI",
+    "agritech": "Agrartechnologie"
+  },
+  "footer": {
+    "claim": "Bavaria AeroTech erforscht SOUVERÄN-AI und bereitet landwirtschaftliche Pilotvorhaben vor.",
+    "about": "Über uns",
+    "focus": "Schwerpunkte"
+  },
+  "meta": {
+    "inspections": {
+      "title": "Technische Luftinspektionen | Bavaria AeroTech",
+      "description": "Bavaria AeroTech prüft technische Luftinspektionen als mögliche zukünftige Ergänzung für Gebäude, Dächer, Photovoltaikanlagen und Infrastruktur."
+    },
+    "home": {
+      "title": "Bavaria AeroTech | SOUVERÄN-AI und Agrartechnologie",
+      "description": "Bavaria AeroTech erforscht SOUVERÄN-AI und bereitet Pilotvorhaben in der Agrartechnologie vor."
+    },
+    "pilot": {
+      "title": "Pilotprojekt | Bavaria AeroTech Solutions",
+      "description": "Aktueller Stand der Hydroponik- und Agrardrohnen-Pilotzweige in Bayern."
+    },
+    "hub": {
+      "title": "Green Hub | Langfristige Ausbaustufe",
+      "description": "Der Bavaria AeroTech Green Hub verbindet hydroponische Produktion, Agrartechnologie, Pilotierung, Entwicklung und regionale Kooperation in einem gemeinsamen Standortkonzept."
+    },
+    "drones": {
+      "title": "Agrardrohnen & Präzisionslandwirtschaft | Bavaria AeroTech",
+      "description": "Bavaria AeroTech bereitet Agrardrohnen-Anwendungen für Monitoring, Datenerfassung und Präzisionslandwirtschaft vor."
+    },
+    "technology": {
+      "title": "Technologie | Bavaria AeroTech Solutions",
+      "description": "Technologiestatus von Hydroponik, Agrardrohnen, Sensorik und SOUVERÄN-AI."
+    },
+    "cooperation": {
+      "title": "Kooperation | Bavaria AeroTech Solutions",
+      "description": "Kooperationsmöglichkeiten für Landwirtschaft, Forschung, Technologie und Finanzierung."
+    },
+    "company": {
+      "title": "Unternehmen | Bavaria AeroTech Solutions UG",
+      "description": "Team, Mission und Pilot-to-Hub-Strategie der Bavaria AeroTech Solutions UG in Abenberg."
+    },
+    "media": {
+      "title": "Medien | Bavaria AeroTech Solutions",
+      "description": "Ein Einblick in den hydroponischen Anbau von Grünfutter und in das Forschungskonzept SOUVERÄN-AI."
+    },
+    "contact": {
+      "title": "Kontakt | Bavaria AeroTech Solutions",
+      "description": "Kontakt und Anfrageformular für Pilotkunden, Forschung, Technologiepartner und Investment."
+    },
+    "fodder": {
+      "title": "Hydroponisches Frischfutter | Bavaria AeroTech",
+      "description": "Bavaria AeroTech entwickelt ein hydroponisches Frischfutterkonzept mit regionalem Getreide und technischer Pilotvalidierung."
+    },
+    "souveraen-ai": {
+      "title": "SOUVERÄN-AI | Bavaria AeroTech",
+      "description": "Forschungskonzept für eine lokal lernende KI-Architektur mit erfahrungsbasierter Anpassung."
+    },
+    "agritech": {
+      "title": "Agrartechnologie | Bavaria AeroTech",
+      "description": "Wir bereiten Pilotvorhaben für hydroponisches Grünfutter und Agrardrohnen vor."
+    },
+    "project": {
+      "title": "Projektanfrage | Bavaria AeroTech Solutions UG",
+      "description": "Projektanfrage an Bavaria AeroTech Solutions UG für SOUVERÄN-AI-Forschung, Agrartechnologie, Hydroponik, Agrardrohnen, technische Inspektionen und Green Hub-Partnerschaften."
+    }
+  },
+  "home": {
+    "badge": "Pilotphase · Bayern · Im Aufbau",
+    "title": "SOUVERÄN-AI und Agrartechnologie aus Bayern",
+    "lead": "Bavaria AeroTech erforscht eine Architektur für lokal lernende KI und bereitet Pilotvorhaben für hydroponisches Grünfutter und Agrardrohnen vor.",
+    "solutions": "Geschäftsbereiche entdecken",
+    "pilot": "Projektanfrage senden",
+    "cooperate": "Kooperation anfragen →",
+    "audience": "Was suchen Sie?",
+    "two": "Drei Geschäftsbereiche. Eine verantwortungsvolle Perspektive.",
+    "status": "Vom Konzept in den realen Betrieb",
+    "future": "Heute Pilotbetrieb. Morgen Green Hub.",
+    "team": "Verantwortung und Technologiekompetenz",
+    "final": "Welche Form der Zusammenarbeit interessiert Sie?",
+    "hubPanelEyebrow": "Langfristige Ausbaustufe",
+    "hubPanelTitle": "Zum Bavaria AeroTech Green Hub",
+    "hubPanelLead": "Der Green Hub bildet die langfristige Plattform für Produktion, Technologieentwicklung, Pilotierung und regionale Kooperation.",
+    "hubPanelAction": "Green Hub ansehen",
+    "teamChristinaRole": "Geschäftsführung",
+    "teamEduardRole": "Kaufmännische Leitung",
+    "teamMaksymRole": "Projektmitarbeiter & technischer Koordinator (in Qualifizierung)",
+    "eyebrow": "Technologie und Forschung aus Bayern",
+    "areasEyebrow": "Unsere Schwerpunkte",
+    "areasTitle": "Zwei gleichwertige Entwicklungsfelder.",
+    "areasLead": "Forschung an einer lernenden KI-Architektur und die Vorbereitung landwirtschaftlicher Pilotvorhaben.",
+    "aiLead": "Wir untersuchen, wie KI aus Erfahrung lernen und erworbene Fähigkeiten bewahren kann.",
+    "aiStatus": "Forschungskonzept",
+    "aiAction": "SOUVERÄN-AI kennenlernen",
+    "agriLead": "Wir bereiten Anwendungen für hydroponisches Grünfutter und Agrardrohnen vor.",
+    "agriStatus": "Pilotvorhaben in Vorbereitung",
+    "agriAction": "Agrartechnologie entdecken",
+    "focusLead": "Wir verbinden die Forschung an SOUVERÄN-AI mit der schrittweisen Vorbereitung landwirtschaftlicher Pilotvorhaben.",
+    "focusBody": "Neue Ansätze werden geprüft und weiterentwickelt, bevor daraus konkrete Pilotphasen oder spätere Anwendungen entstehen."
+  },
+  "process": {
+    "eyebrow": "Kontrollierte Produktion",
+    "sectionTitle": "Vom Saatgut zur fertigen Futtermatte",
+    "sectionLead": "Klar getrennte Produkt-, Wasser- und Tray-Kreisläufe werden in der Pilotphase technisch und praktisch validiert."
+  },
+  "common": {
+    "learn": "Mehr erfahren",
+    "interest": "Interesse vormerken",
+    "contact": "Anfrage senden",
+    "planned": "Geplant",
+    "progress": "In Vorbereitung",
+    "future": "Zukunfts- und Ausbaukonzept",
+    "symbolic": "Symbolische Darstellung",
+    "disclaimer": "Konzeptdarstellung. Keine freigegebene Bau-, Montage- oder Ausführungsplanung."
+  },
+  "pages": {
+    "fodderTitle": "Hydroponisches Grünfutter als Pilotprodukt",
+    "fodderLead": "Wir bereiten eine kleinere Pilotanlage vor, um Produkt, Nachfrage und betriebliche Integration gemeinsam mit ersten Tierhaltungsbetrieben praktisch zu validieren.",
+    "droneTitle": "Agrardrohnen-Service mit Plattform und Pilot",
+    "droneLead": "Der Leistungsbereich befindet sich im Aufbau. Betriebe sollen professionelle Einsätze anfragen können, ohne selbst ein Drohnensystem beschaffen zu müssen.",
+    "inspectionTitle": "Inspektionsleistungen als perspektivischer Bereich",
+    "inspectionLead": "Dach-, PV- und Infrastrukturinspektionen sind eine spätere Erweiterung nach Auswahl geeigneter Technik und Erfüllung aller Voraussetzungen.",
+    "pilotTitle": "Vom belastbaren Pilotprojekt zur Skalierung",
+    "pilotLead": "Wir beginnen bewusst mit zwei überschaubaren Pilotzweigen, validieren Nachfrage und Betrieb und schaffen erst danach die Grundlage für größere Investitionen.",
+    "hubTitle": "Unsere langfristige Ausbaustufe",
+    "hubLead": "Der Bavaria AeroTech Green Hub ist ein Zukunftsbild – abhängig von erfolgreichem Pilotbetrieb, Marktvalidierung, Finanzierung und Standortentwicklung.",
+    "techTitle": "Technologie mit klar ausgewiesenem Reifegrad",
+    "techLead": "Wir trennen konsequent zwischen heute verfügbarer Basistechnologie, laufender Auswahl und zukünftiger Eigenentwicklung.",
+    "coopTitle": "Kooperation, die mit einer konkreten Pilotfrage beginnt",
+    "coopLead": "Wir suchen Landwirtschaftsbetriebe, Forschungspartner, Technologieanbieter und Finanzierungspartner für klar definierte nächste Schritte.",
+    "companyTitle": "Bavaria AeroTech Solutions UG",
+    "companyLead": "Ein in Bayern registriertes Unternehmen in der vorbereitenden Pilotphase – mit einer schrittweisen Pilot-to-Hub-Strategie.",
+    "mediaTitle": "Projektvideos",
+    "mediaLead": "Ein Einblick in den hydroponischen Anbau von Grünfutter und in das Forschungskonzept SOUVERÄN-AI.",
+    "contactTitle": "Lassen Sie uns konkret sprechen",
+    "contactLead": "Wählen Sie Ihren Bereich. So landet Ihre Anfrage mit dem richtigen Kontext bei unserem Team."
+  },
+  "company": {
+    "country": "Deutschland",
+    "location": "Standort",
+    "mapAddress": "Am Steig 2F · 91183 Abenberg",
+    "loadMap": "Karte laden",
+    "loadMapAria": "Externe Karte von Google Maps laden",
+    "mapPrivacy": "Beim Laden der Karte können Daten an Google übertragen werden.",
+    "openMap": "In Google Maps öffnen"
+  },
+  "hydro": {
+    "videoEyebrow": "Einblick in den Prozess",
+    "videoTitle": "Vom Korn zum hydroponischen Grünfutter.",
+    "videoLead": "Die Konzeptvisualisierung zeigt die visuelle Abfolge von der Keimung bis zur fertigen Futtermatte.",
+    "videoCaption": "Konzeptvisualisierung einer Prozesssequenz; keine Live-Aufnahme eines laufenden Betriebs.",
+    "videoAria": "Konzeptvideo zur hydroponischen Frischfutterproduktion",
+    "videoFallback": "Ihr Browser unterstützt die Videowiedergabe nicht.",
+    "biomassTitle": "Pilotstatus",
+    "biomassLead": "Konkrete Zyklus-, Ertrags- und Kapazitätswerte werden im Pilot validiert und nicht als aktuelle Produktions- oder Lieferleistung ausgewiesen.",
+    "biomassInputValue": "Rohstoff",
+    "biomassInputLabel": "Qualität und Vorbereitung",
+    "biomassDurationValue": "Prozess",
+    "biomassDurationLabel": "Kontrollierte Bedingungen",
+    "biomassOutputValue": "Output",
+    "biomassOutputLabel": "Im Pilot zu validieren",
+    "biomassKpisLabel": "Pilotvalidierung",
+    "kpiFactorLabel": "Prozessstabilität",
+    "kpiFactorValue": "Im Pilot zu validieren",
+    "kpiSeedLabel": "Rohstoffqualität",
+    "kpiSeedValue": "Im Pilot zu validieren",
+    "kpiOutputLabel": "Produktionsleistung",
+    "kpiOutputValue": "Nicht als aktuell ausgewiesen",
+    "kpiCycleLabel": "Produktionszyklus",
+    "kpiCycleValue": "Planungsannahme, noch offen"
+  },
+  "drone": {
+    "capabilitiesEyebrow": "Anwendungsprofile",
+    "capabilitiesTitle": "Fünf Anwendungsprofile im landwirtschaftlichen Einsatz",
+    "capabilitiesLead": "Die Anwendungsprofile zeigen, wie Agrardrohnen Beobachtung, Ausbringung, Behandlung und Dokumentation effizient miteinander verbinden können.",
+    "capabilitiesNotice": "Von der Luftinspektion bis zur strukturierten Dokumentation.",
+    "capabilitiesFlowLabel": "Anwendungsprofile",
+    "capabilitiesKpisLabel": "Leistungsmerkmale",
+    "capabilityInspectionTitle": "Luftinspektion",
+    "capabilityInspectionText": "Luftgestützte Übersicht von Flächen, Randbereichen und schwer zugänglichen Zonen.",
+    "capabilitySprayTitle": "Präzisionssprühung",
+    "capabilitySprayText": "Gezielte Ausbringung flüssiger Betriebsmittel nach definiertem Flächen- und Einsatzprofil.",
+    "capabilitySeedTitle": "Saatgut & Dünger",
+    "capabilitySeedText": "Gleichmäßige Verteilung geeigneter Saatgut- und Düngemittel auf festgelegten Einsatzflächen.",
+    "capabilityPlantTitle": "Einzelpflanzenbehandlung",
+    "capabilityPlantText": "Punktgenaue Behandlung ausgewählter Pflanzen oder Teilflächen bei geeigneter technischer und regulatorischer Grundlage.",
+    "capabilityOverviewTitle": "Digitaler Feldüberblick",
+    "capabilityOverviewText": "Strukturierte Erfassung kompletter Flächen mit Foto-, Video- und Einsatzdokumentation.",
+    "kpiAerialLabel": "Luftübersicht",
+    "kpiAerialText": "Übersicht aus der Luft",
+    "kpiPrecisionLabel": "Präzisionsanwendung",
+    "kpiPrecisionText": "Gezielte Behandlung definierter Bereiche",
+    "kpiRoutesLabel": "Automatisierte Flugrouten",
+    "kpiRoutesText": "Reproduzierbare Einsatzabläufe",
+    "kpiDocumentationLabel": "Digitale Dokumentation",
+    "kpiDocumentationText": "Strukturierte Foto- und Videodokumentation"
+  },
+  "ai": {
+    "status": "Forschungskonzept",
+    "lead": "Wie kann KI aus Erfahrung lernen und erworbene Fähigkeiten bewahren? Bavaria AeroTech untersucht eine Architektur, die neues Wissen mit bisherigen Erfahrungen verknüpfen soll. Ziel ist es, Lernen und Verarbeitung auf einem Gerät oder in eigener Infrastruktur zu ermöglichen.",
+    "funding": "Forschungsfinanzierung besprechen",
+    "whyTitle": "Warum Lernen aus Erfahrung wichtig ist",
+    "why": "Autonome Systeme treffen auf veränderliche Situationen. Eine hilfreiche Architektur muss neues Wissen mit vorhandenem verknüpfen und zuvor erworbene Fähigkeiten erhalten. Wie sich das zuverlässig erreichen lässt, ist eine offene Forschungsfrage.",
+    "methodTitle": "Wie der Ansatz funktioniert",
+    "method": "Der Ansatz untersucht digitale nervenähnliche Elemente mit innerem Zustand. Sie nehmen Signale auf, geben sie weiter und beeinflussen einander. Erfahrungen sollen Verbindungen verändern und neues Wissen an zuvor Gelerntes knüpfen. Lernen, Gedächtnis und Verhalten sollen gemeinsam wirken.",
+    "sovereigntyTitle": "Was Souveränität hier bedeutet",
+    "sovereignty": "Das Projekt zielt auf Systeme, deren Verarbeitung und Anpassung auf einem Gerät oder in eigener Infrastruktur stattfinden können. Organisationen sollen Architektur, Daten und Veränderungen nachvollziehen und kontrollieren können. Eine dauerhafte Verbindung zu einem externen Dienst soll nicht erforderlich sein.",
+    "applicationsTitle": "Mögliche Anwendungen",
+    "applications": "Mögliche Felder sind lokale Computer, industrielle Systeme und Robotik, einschließlich unbemannter Plattformen, auf denen lokale Verarbeitung bei eingeschränkter Verbindung wichtig sein kann. Dies sind mögliche Felder künftiger Forschung.",
+    "nextTitle": "Forschungsstand und nächste Schritte",
+    "next": "SOUVERÄN-AI befindet sich in der Forschungs- und Konzeptphase. Geplant sind die Prüfung einzelner Elemente auf Speicherung und Wiedergabe von Erfahrung, die Untersuchung ihres Zusammenwirkens und anschließend der Aufbau einer integrierten experimentellen Architektur zur Prüfung auf verfügbaren Rechenplattformen.",
+    "criteria": "Bewertet werden sollen der Erhalt erworbener Fähigkeiten, Speicherbedarf, Rechenaufwand, Energieverbrauch und die Nachvollziehbarkeit von Änderungen. Ob die Architektur diese Ziele erreichen kann, muss erst untersucht werden.",
+    "financeTitle": "Forschungsfinanzierung und Kooperation",
+    "finance": "Eine Förderung soll den Aufbau der experimentellen Architektur und die Prüfung ihrer Grundannahmen ermöglichen. Im Gespräch lassen sich der nächste Forschungsschritt und eine mögliche Zusammenarbeit konkretisieren.",
+    "cooperation": "Forschungskooperation anfragen",
+    "whyDetail": "Das wird besonders deutlich, wenn sich Aufgaben, Umgebungen oder verfügbare Informationen ändern. Eine Architektur, die aus Erfahrung lernen soll, muss neue Beobachtungen aufnehmen und sie sinnvoll zu bereits Erlerntem in Beziehung setzen. Zugleich darf eine neue Anpassung nicht automatisch bedeuten, dass eine früher erworbene Fähigkeit verloren geht. Wie sich beides in einer gemeinsamen Struktur erreichen und verlässlich prüfen lässt, ist eine der zentralen offenen Fragen des Projekts. Der Ansatz richtet sich auf diese konkrete Fragestellung und erhebt keinen pauschalen Anspruch, andere Verfahren zu ersetzen.",
+    "methodDetail": "Im Konzept besteht ein solches Element nicht nur aus einer festen Eingabe und Ausgabe. Ein interner Zustand soll beeinflussen, wie es auf neue Signale reagiert. Elemente können Informationen untereinander weitergeben und gemeinsam eine größere Struktur bilden. Wenn diese Struktur Erfahrungen verarbeitet, sollen Veränderungen an einem Element auch seine späteren Reaktionen beeinflussen. Dadurch könnte ein Zusammenhang aus gespeicherten Erfahrungen und aktuellem Verhalten entstehen. Ob die Elemente auf diese Weise stabil zusammenarbeiten, wie Informationen erhalten bleiben und wie eine gezielte Anpassung gelingt, muss experimentell untersucht werden.",
+    "sovereigntyDetail": "Ein Betrieb auf einem eigenen Gerät oder in einer kontrollierten Infrastruktur kann Organisationen mehr Einfluss darauf geben, wo Daten verarbeitet werden und welche Änderungen in ein System eingehen. Dafür müssen Aufbau, Datenflüsse und Anpassungsschritte nachvollziehbar sein. Lokale Verarbeitung allein garantiert noch keine Sicherheit oder Kontrolle; sie ist ein möglicher technischer Baustein, dessen Grenzen ebenfalls geprüft werden müssen. SOUVERÄN-AI untersucht, ob sich Lernen und Verarbeitung so gestalten lassen, dass sie ohne eine ständig verfügbare externe Plattform auskommen können.",
+    "applicationsDetail": "Bei lokalen Computern wäre zu untersuchen, ob die Architektur innerhalb begrenzter Speicher- und Rechenressourcen arbeiten kann. In industriellen Systemen wären nachvollziehbare Anpassungen und ein kontrollierbares Verhalten wichtig. Für zivile Robotik und unbemannte Plattformen stellt sich zusätzlich die Frage, wie ein System bei wechselnden Bedingungen und zeitweise eingeschränkter Verbindung reagieren würde. Das sind mögliche spätere Untersuchungsfelder, keine angekündigten Produkte oder einsatzbereiten Anwendungen. Auswahl und Umfang hängen davon ab, ob die grundlegenden Experimente tragfähige Ergebnisse liefern.",
+    "stepsTitle": "Der vorgesehene Prüfpfad",
+    "stepOne": "Zuerst soll an einzelnen digitalen Elementen untersucht werden, ob sie Erfahrungen aufnehmen, behalten und später in passenden Situationen wieder berücksichtigen können.",
+    "stepTwo": "Anschließend soll geprüft werden, wie mehrere Elemente zusammenwirken: ob Informationen in der Gesamtstruktur erhalten bleiben und Veränderungen an einer Stelle nachvollziehbare Folgen haben.",
+    "stepThree": "Erst danach soll eine integrierte experimentelle Architektur aufgebaut und auf verfügbaren Rechenplattformen bewertet werden. Diese Reihenfolge beschreibt den nächsten Forschungsweg, nicht bereits abgeschlossene Meilensteine.",
+    "nextDetail": "Für jeden Schritt braucht es geeignete, nachvollziehbare Versuche. Die Bewertung soll erfassen, ob Fähigkeiten nach neuen Anpassungen erhalten bleiben, wie viel Speicher und Rechenleistung benötigt werden und wie sich der Energiebedarf entwickelt. Ebenso muss sichtbar sein, welche Änderung zu welchem Verhalten geführt hat. Erst ein Vergleich dieser Kriterien kann zeigen, wo die Architektur funktioniert, wo sie Grenzen hat und welche Fragen offenbleiben.",
+    "financeDetail": "Forschungsfinanzierung würde die Entwicklung einer begrenzten experimentellen Architektur und ihre Prüfung auf verfügbaren Plattformen ermöglichen. Ein erster Austausch kann den Umfang eines passenden Arbeitspakets, mögliche Forschungspartner und geeignete Prüfbedingungen klären. Die konkrete Ausgestaltung hängt von den Ergebnissen dieser Gespräche und den verfügbaren Ressourcen ab.",
+    "back": "Zurück zu den Entwicklungsfeldern"
+  },
+  "agri": {
+    "title": "Agrartechnologie",
+    "lead": "Wir bereiten Pilotvorhaben für hydroponisches Grünfutter und Agrardrohnen vor.",
+    "caption": "Referenzaufnahme einer professionellen Agrardrohnen-Plattform.",
+    "hydroTitle": "Hydroponisches Grünfutter",
+    "hydro": "Ein geplantes Pilotkonzept soll kontrollierte Produktionsprozesse unter realen Bedingungen prüfen. Die Pilotphase befindet sich in Vorbereitung.",
+    "hydroStatus": "Pilotphase in Vorbereitung",
+    "hydroLink": "Hydroponik ansehen",
+    "droneTitle": "Agrardrohnen",
+    "drone": "Anwendungen für Monitoring, Datenerfassung und Präzisionslandwirtschaft werden technisch, regulatorisch und wirtschaftlich vorbereitet.",
+    "droneStatus": "Leistungsangebot in Vorbereitung",
+    "droneLink": "Agrardrohnen ansehen",
+    "inspectionTitle": "Technische Inspektionen",
+    "inspection": "Drohnenbasierte Sichtprüfungen und strukturierte Datenerfassung werden als mögliche spätere Ergänzung geprüft.",
+    "inspectionStatus": "Geplante Zusatzleistung",
+    "inspectionLink": "Entwicklung ansehen",
+    "pilotLink": "Pilotprojekt",
+    "coopLink": "Kooperation",
+    "back": "Zurück zur Agrartechnologie",
+    "backHome": "Zurück zu den Entwicklungsfeldern"
+  },
+  "form": {
+    "funding": "Forschungsfinanzierung"
+  },
+  "concept": {
+    "heroTitle": "Technologie aus Bayern.",
+    "heroLead": "Wir bereiten Agrartechnologie für den Praxistest vor und erforschen mit SOUVERÄN-AI, wie KI lokal aus Erfahrung lernen kann.",
+    "agShort": "Hydroponik und Agrardrohnen",
+    "aiShort": "Forschung an lokal lernender KI",
+    "directions": "Unsere Entwicklungsfelder",
+    "agCard": "Frisches Grünfutter aus kontrolliertem Anbau. Agrardrohnen für die Beobachtung von Flächen.",
+    "aiCard": "Wie kann ein System aus neuer Erfahrung lernen und bereits erworbene Fähigkeiten bewahren?",
+    "hubLead": "Ein künftiger Standort für unser Team, technische Entwicklung und eigene Serverinfrastruktur.",
+    "hubWork": "Arbeitsplätze und Flächen für die Entwicklung",
+    "hubServer": "Räume für Server und Rechentechnik",
+    "hubEnergy": "Eigene Energieerzeugung und geplante Reserveversorgung",
+    "contactTitle": "Sprechen wir über das Projekt.",
+    "agDiscover": "Agrartechnologie entdecken",
+    "aiDiscover": "SOUVERÄN-AI kennenlernen",
+    "hubStatus": "Geplante Infrastruktur",
+    "teamTitle": "Das Team hinter Bavaria AeroTech.",
+    "pilotStatus": "Pilotvorhaben in Vorbereitung",
+    "hubCaption": "Konzeptvisualisierung. Die endgültige Planung und Ausführung können abweichen.",
+    "pilotTalk": "Ein Pilotvorhaben besprechen.",
+    "hydroCaption": "Visualisierung des Anbauprinzips.",
+    "droneCaption": "Referenzbild einer Agrardrohnenplattform.",
+    "aiJump": "Den Ansatz verstehen",
+    "aiLearn": "Erfahrung aufnehmen",
+    "aiLearnText": "Ein neuer Reiz soll den inneren Zustand eines digitalen Elements beeinflussen.",
+    "aiKeep": "Fähigkeiten bewahren",
+    "aiKeepText": "Die offene Frage: Bleibt früher Gelerntes nach neuen Erfahrungen nutzbar?",
+    "aiLocal": "Lokal arbeiten",
+    "aiLocalText": "Verarbeitung und Anpassung sollen in eigener Infrastruktur möglich sein.",
+    "aiHeading": "Was wir untersuchen",
+    "aiContact": "Gemeinsam weiterforschen.",
+    "localForm": "Lokale Vorschau. Das Formular versendet keine E-Mail.",
+    "brand": "Bavaria AeroTech Solutions",
+    "motionPause": "Bewegung pausieren",
+    "motionPlay": "Bewegung fortsetzen",
+    "rackAlt": "Konzeptbild eines mehrstöckigen Hydroponikregals mit frischem Grünfutter"
+  },
+  "projectFilms": {
+    "hydroTitle": "Hydroponisches Grünfutter",
+    "hydroText": "Das Konzeptvideo zeigt den geplanten Ablauf vom Keimen des Getreides bis zur Ernte des Grünfutters.",
+    "hydroLink": "Hydroponik ansehen",
+    "aiText": "Der Film erklärt das Forschungskonzept für lokal lernende KI und die geplanten Untersuchungen. Mit deutschen Untertiteln.",
+    "contactTitle": "Medienanfragen",
+    "contactText": "Für Projektinformationen, Interviews und Anfragen zu freigegebenem Bildmaterial.",
+    "contactLink": "Medienanfrage"
+  }
+}
