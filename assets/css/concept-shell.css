@@ -1,14 +1,25 @@
 /* Shared navigation surfaces for the local visual concept. */
 .site-header {
-  background: rgba(246, 251, 248, .75);
+  --header-glass: rgba(246, 251, 248, .88);
+  isolation: isolate;
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -1.75rem;
+  z-index: -1;
+  background: var(--header-glass);
   -webkit-backdrop-filter: blur(19px) saturate(135%);
   backdrop-filter: blur(19px) saturate(135%);
-  box-shadow: 0 6px 25px rgba(16, 43, 67, .05);
+  mask-image: linear-gradient(#000 55%, #000d 68%, #0006 84%, transparent);
+  pointer-events: none;
 }
 .concept-page .site-header {
+  --header-glass: rgba(7, 25, 37, .88);
   margin-bottom: calc(-1 * var(--header-h));
-  background: linear-gradient(110deg, rgba(7, 25, 37, .76), rgba(14, 35, 40, .56));
-  border-color: rgba(237, 255, 247, .19);
 }
 .concept-page .site-header .header-inner {
   width: min(100%,1600px);
@@ -70,6 +81,24 @@
 .research-cards h3 { font-size:clamp(1.2rem,1.85vw,1.65rem); line-height:1.2; margin:14px 0 8px; }
 .research-cards p { color:var(--muted); }
 .research-glyph { display:grid; place-items:center; width:42px; height:42px; background:#153d34; color:#e4f6e7; border-radius:12px; font-size:25px; line-height:1; }
+.research-film {
+  max-inline-size: 57rem;
+  margin: clamp(2.5rem, 6vw, 5rem) auto 0;
+}
+.research-film video {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--navy);
+  border-radius: 9px;
+}
+.research-film figcaption {
+  margin-block-start: .7rem;
+  color: var(--text-secondary);
+  font-size: .9rem;
+}
 .research-library { margin-top:40px; border-top:1px solid var(--line); }
 .research-detail { border-bottom:1px solid var(--line); }
 .research-detail summary { cursor:pointer; padding:18px 0; font-weight:680; font-size:clamp(1.1rem,2vw,1.45rem); color:#153d34; }
@@ -190,3 +219,149 @@ body :is(button, .btn, .button, [role="button"], input[type="button"], input[typ
 }
 [data-page="technology"] .badge { max-inline-size: 100%; min-inline-size: 0; }
 [data-page="technology"] .badge::before { flex: 0 0 7px; }
+
+/* Keep the background blends away from the text and controls. */
+body {
+  --section-surface: var(--bg-primary);
+  --section-muted-surface: var(--bg-secondary);
+  --section-interval: clamp(9.5rem, 24vw, 21rem);
+  --section-fade-inset: clamp(2rem, 4.5vw, 4rem);
+  --section-clearance: calc(var(--section-fade-inset) + clamp(2.5rem, 6vw, 6rem));
+  --light-fade: clamp(2.75rem, 6vw, 6rem);
+}
+
+:is(.hub-page, .drone-page, .hydro-page, .inspection-page) {
+  --section-surface: var(--surface-primary);
+  --section-muted-surface: var(--bg-primary);
+}
+
+.concept-page {
+  --section-surface: var(--paper);
+  --contact-surface: #eef2f5;
+  --content-space: clamp(5rem, 10vw, 10rem);
+}
+
+.concept-page .hero {
+  --hero-interval: clamp(21rem, 47vw, 43rem);
+  margin-block-end: var(--hero-interval);
+  padding-block: 0 clamp(1rem, 2.5vw, 2.25rem);
+  overflow: visible;
+  background: var(--section-surface);
+}
+
+/* Fade only the part of the scene that extends into the space after the hero. */
+.hero-backdrop {
+  inset-block-end: calc(-1 * var(--hero-interval));
+  mask-image:
+    linear-gradient(#000, #000),
+    radial-gradient(ellipse 205% 182% at 83% -75%,
+      #000 59%, rgb(0 0 0 / 98%) 63%, rgb(0 0 0 / 89%) 68%,
+      rgb(0 0 0 / 73%) 73%, rgb(0 0 0 / 52%) 78%, rgb(0 0 0 / 30%) 83%,
+      rgb(0 0 0 / 12%) 88%, rgb(0 0 0 / 2%) 93%, transparent 96%);
+  mask-size: 100% calc(100% - var(--hero-interval) + 2px), 100% var(--hero-interval);
+  mask-position: top, bottom;
+  mask-repeat: no-repeat;
+  mask-composite: add;
+}
+
+.concept-page main > .section {
+  padding-block: var(--content-space);
+}
+
+main > :is(.page-hero, .panoramic-hero, .inspection-hero, .section--muted, .solution-row) {
+  --light-start: var(--section-surface);
+  --light-end: var(--section-surface);
+  background-image:
+    linear-gradient(to bottom, var(--light-start), transparent),
+    linear-gradient(to top, var(--light-end), transparent);
+  background-position: top, bottom;
+  background-size: 100% var(--light-fade);
+  background-repeat: no-repeat;
+  border-block-color: transparent;
+}
+
+.section--navy + .section--muted,
+.section--muted + .section--muted { --light-start: transparent; }
+.section--muted:has(+ :is(.section--muted, .section--navy)) { --light-end: transparent; }
+
+.media-intro { border-bottom-color: transparent; }
+
+.concept-page .contact {
+  --contact-previous: var(--section-surface);
+  border-top: 0;
+  background: linear-gradient(to bottom, var(--contact-previous), var(--contact-surface))
+    top / 100% var(--light-fade) no-repeat var(--contact-surface);
+}
+
+.concept-page .team + .contact { --contact-previous: var(--surface-primary); }
+
+/* The full-width blend fills the gap and finishes inside the dark surface. */
+:is(.concept-page .hub, main .section--navy, .site-footer) {
+  --edge-start: var(--section-surface);
+  --edge-end: var(--section-surface);
+  --edge-dark: var(--navy);
+  position: relative;
+  isolation: isolate;
+}
+
+.concept-page .hub {
+  --edge-end: var(--surface-primary);
+  --edge-dark: #0c252b;
+  background-color: var(--edge-dark);
+}
+
+main > :is(.hub, .section--navy) { margin-block: var(--section-interval); }
+.site-footer { margin-block-start: var(--section-interval); }
+
+.section--muted + .section--navy { --edge-start: var(--section-muted-surface); }
+.section--navy:has(+ .section--muted) { --edge-end: var(--section-muted-surface); }
+main:has(> .contact:last-child) + .site-footer { --edge-start: var(--contact-surface); }
+
+main > .section:is(.hub, .section--navy),
+main > :is(.hub, .section--navy) + .section {
+  padding-block-start: max(var(--section-clearance), var(--content-space, 0px));
+}
+
+main > .section:is(.hub, .section--navy),
+main > .section:has(+ :is(.hub, .section--navy)),
+main:has(+ .site-footer) > section:last-child {
+  padding-block-end: max(var(--section-clearance), var(--content-space, 0px));
+}
+
+:is(.concept-page .hub, main .section--navy, .site-footer)::before,
+:is(.concept-page .hub, main .section--navy)::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  block-size: calc(var(--section-interval) + var(--section-fade-inset));
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(var(--blend-direction), var(--blend-light), var(--edge-dark));
+  background: linear-gradient(var(--blend-direction) in oklab,
+    var(--blend-light) 1.8vw,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 1%) 10%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 6%) 20%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 16%) 30%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 32%) 40%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 68%) 60%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 84%) 70%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 94%) 80%,
+    color-mix(in oklab, var(--blend-light), var(--edge-dark) 99%) 90%,
+    var(--edge-dark) calc(100% - 1.8vw));
+}
+
+:is(.concept-page .hub, main .section--navy, .site-footer)::before {
+  --blend-direction: 179deg;
+  --blend-light: var(--edge-start);
+  inset-block-start: calc(-1 * var(--section-interval));
+}
+
+:is(.concept-page .hub, main .section--navy)::after {
+  --blend-direction: 1deg;
+  --blend-light: var(--edge-end);
+  inset-block-end: calc(-1 * var(--section-interval));
+}
+
+.site-footer {
+  padding-block-start: var(--section-clearance);
+}

@@ -266,7 +266,7 @@
   },
   "concept": {
     "heroTitle": "Technology from Bavaria.",
-    "heroLead": "We prepare agricultural technology for field trials and research how AI can learn locally from experience.",
+    "heroLead": "We plan to produce fresh hydroponic fodder for farms. With SOUVERÄN-AI, we are researching how AI can learn locally from experience.",
     "agShort": "Hydroponics and agricultural drones",
     "aiShort": "Research into locally learning AI",
     "directions": "Our areas of development",
@@ -306,6 +306,7 @@
     "hydroText": "The concept video outlines the planned process from germinating grain to harvesting green fodder.",
     "hydroLink": "Explore hydroponics",
     "aiText": "The film explains the research concept for locally learning AI and the planned investigations. With German subtitles.",
+    "aiCaption": "SOUVERÄN-AI · Project film with German subtitles",
     "contactTitle": "Media enquiries",
     "contactText": "For project information, interviews and requests for approved imagery.",
     "contactLink": "Media enquiry"
